@@ -1,0 +1,899 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    padding: 0 30px;
+    margin: 0 auto;
+    width: 1170px;
+}
+
+/* ...............................................About-seloder-section */
+
+
+.About-seloder-section {
+    background-image: url(images/header_img1.jpg);
+    text-align: center;
+    background-size: cover;
+
+}
+
+.About-seloder-section img {
+    width: 100%;
+
+}
+
+
+.About-seloder-section h1 {
+    padding-top: 92px;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+
+}
+
+
+.About-seloder-section p {
+    font-size: 15px;
+    padding-bottom: 100px;
+    color: #fff;
+
+}
+
+/* ############# #########       2nd part      #######################*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+
+/* .main-header .left-column img {
+    margin: -7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #121201;
+    border-radius: 22px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+.main-header {
+    background-color: rgb(177, 142, 106);
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+.main-header .main-column {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    padding-left: 7px;
+
+
+}
+
+.main-header .right-column {
+    text-align: right;
+
+}
+
+.main-header a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.main-header .right-column a:after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    bottom: -36px;
+    left: 48%;
+    transform: translate(-50%);
+    transition: .5s;
+}
+
+.main-header .right-column a:hover::after {
+    width: calc(100% + 20px);
+}
+
+
+
+.main-header ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 40px;
+
+}
+
+.main-header ul li:last-child {
+    padding-right: 0;
+} */
+
+/*.................................................................. main swiper mySwiper */
+
+.wrapper,
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.slide {
+  overflow: hidden;
+}
+.slide::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+.slide .image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slide .image-data {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+.image-data span.text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+.image-data h2 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #fff;
+}
+a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #333;
+  background: #fff;
+  text-decoration: none;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+a.button:hover {
+  color: #fff;
+  background-color: #c87e4f;
+}
+
+/* swiper button css */
+.nav-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.swiper-button-next {
+  right: 50px;
+}
+.swiper-button-prev {
+  left: 50px;
+}
+.nav-btn::before,
+.nav-btn::after {
+  font-size: 25px;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  opacity: 1;
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  visibility: hidden;
+}
+.swiper-pagination-bullet-active {
+  border: 2px solid #fff;
+  background-color: #c87e4f;
+}
+@media screen and (max-width: 768px) {
+  .nav-btn {
+    visibility: hidden;
+  }
+  .swiper-pagination-bullet {
+    visibility: visible;
+  }
+}
+
+/* ............................................. Banner 3th part..........................
+
+.slider-section .main-column .text-content {
+    position: absolute;
+    top: 72%;
+    right: 53px;
+
+}
+
+.slider-section .main-column {
+    position: relative;
+}
+
+.slider-section img {
+    width: 100%;
+}
+
+
+
+.slider-section .text-content a {
+    text-decoration: none;
+    color: rgb(241, 243, 245);
+    font-weight: 700;
+
+}
+
+.slider-section .text-content .second a {
+    text-decoration: none;
+    color: rgb(242, 242, 232);
+    font-weight: 700;
+
+
+
+}
+
+.slider-section .text-content button {
+    background-color: #0066cc;
+    width: 142px;
+    height: 42px;
+    border: 2PX solid #fff;
+    border-radius: 20px;
+    color: #fff;
+
+
+}
+
+.slider-section .text-content p {
+    margin-bottom: 30px;
+    font-size: 14px;
+
+}
+
+.slider-section .text-content h1 {
+    font-size: 21px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.slider-section .text-content img{
+    width: 72%;
+    padding-left: 30px;
+    height: 49px;
+}
+.slider-section .text-content{
+    padding-top: 50px;
+}
+
+.slider-section .text-content h5 {
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.slider-section .text-content .second {
+    border: 2px solid #fff;
+    width: 142px;
+    height: 42px;
+    transition: 3s;
+    margin-left: 5px;
+    background-color: #999933;
+
+}
+
+.slider-section .text-content .second:hover {
+    background-color: rgb(47, 52, 55);
+
+
+}
+
+.slider-section .text-content button {
+    border: 2px solid #fff;
+    width: 142px;
+    height: 42px;
+    transition: 2s;
+    margin-left: 61px;
+    margin-top: 15px;
+
+}
+
+.slider-section .text-content button:hover {
+    background-color: rgb(14, 184, 48);
+
+
+} */
+
+/*................................................. meet-team-section */
+
+.meet-team-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #8b8b71;
+}
+
+.meet-team-section .main-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+
+}
+
+.meet-team-section .flex-column{
+   
+    overflow: hidden;
+    /* border-radius: 5px;
+    border: 1px solid; */
+} 
+
+.meet-team-section img {
+    width: 100%;
+}
+
+.meet-team-section .container h1 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.meet-team-section .flex-column h2 {
+    padding-bottom: 10px;
+    font-weight: 400;
+    padding-top: 10px;
+
+}
+
+.meet-team-section .flex-column h5 {
+    padding-bottom: 10px;
+    font-weight: 400;
+
+}
+
+.meet-team-section .flex-column p {
+    text-align: justify;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+.meet-team-section .flex-column .fa-linkedin-in {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.meet-team-section .flex-column .fa-twitter {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.meet-team-section .flex-column a {
+    color: #cececb;
+}
+
+.meet-team-section .flex-column a:hover {
+    color: #080807;
+}
+
+/*............................................ Gallery-Section 0.................................... */
+
+.Gallery-Section h1 {
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 35px;
+    padding-top: 40px;
+
+}
+
+.Gallery-Section .main-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    /* Adds some space between the images */
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+.Gallery-Section .main-column .flex-column{
+    overflow: hidden;
+
+}
+
+.Gallery-Section img {
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Gallery-Section img:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add a shadow for depth */
+}
+
+/* .............................................Review-section ...........................*/
+
+/* .review-section {
+    padding: 80px 0px;
+
+} */
+
+.review-section .main-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 257px;
+    padding-top: 20px;
+
+}
+
+.review-section img {
+    width: 80px;
+    border-radius: 50%;
+    height: 75px;
+    object-fit: contain;
+
+}
+
+.review-section .right-column {
+    padding-top: 20px;
+
+}
+
+.review-section .flex-column {
+
+    box-shadow: 0 4px 8px 0 #af3131, 0 6px 20px 0 #eff306, 0px 10px 5px 0px #c604ec;
+    margin-bottom: 25px;
+
+}
+
+.review-section .flex-column p {
+    margin: 10px;
+    margin-top: 2px;
+}
+
+.review-section h1 {
+    text-align: center;
+    margin: 35px;
+    font-weight: 700;
+    font-size: 40px;
+    /* box-shadow: 0 4px 8px 0 #af3131, 0 6px 20px 0 #eff306, 0px 0px 5px 0px #ec4d04; */
+}
+
+
+
+/*.....................Contact-page................. */
+
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #0725e7;
+    padding: 12px 10px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.contact-form textarea{
+    resize: none;
+    height: 140px;
+    font-family: "Open Sans", sans-serif;
+}
+.contact-form .main-column{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 70px;
+}
+.name_email{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+}
+.contact-form .button {
+	width: 200px;
+	background: #173a69;
+	color: #fff;
+	font-weight: 400;
+	font-size: 15px;
+	border: 2px solid #173a69;
+	cursor: pointer;
+	height: 45px;
+    transition: 2s;
+}
+
+.contact-form .button:hover{
+background-color: rgb(119, 114, 42);
+color: #ffffff;
+}
+
+.contact-form a{
+    text-decoration: none;
+}
+.contact-form ul{
+    list-style: none;
+    line-height: 40px;
+}
+.contact-form li{
+    position: relative;
+    padding-left: 25px;
+    color: #173a69;
+}
+.contact-form .office::before{
+    content: '';
+    position: absolute;
+    background: url(image/office.png);
+    width: 19px;
+    height: 16px;
+    background-size: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.contact-form .phone::before{
+    content: '';
+    position: absolute;
+    background: url(image/phone.png);
+    width: 19px;
+    height: 19px;
+    background-size: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.contact-form .fax::before{
+    content: '';
+    position: absolute;
+    background: url(image/fax.png);
+    width: 19px;
+    height: 19px;
+    background-size: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.contact-form .website::before{
+    content: '';
+    position: absolute;
+    background: url(image/website.png);
+    width: 19px;
+    height: 19px;
+    background-size: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.contact-form{
+    padding: 90px 0px 79px 0px;
+
+}
+.contact-form h3{
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 21px;
+    text-align: center;
+}
+.contact-form p{
+	font-size: 15px;
+	font-weight: 300;
+	padding-bottom: 15px;
+}
+
+
+/*............................................... service-section .........................................*/
+
+.service-section .main-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+}
+
+.service-section img {
+    width: 100%;
+}
+
+.service-section .main-column .flex-column{
+    overflow: hidden;
+}
+.service-section h1 {
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+}
+
+.service-section h2 {
+    font-size: 18px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.service-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #e6dada;
+}
+
+.love {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    font-weight: 600;
+    border: 2px solid black;
+    padding: 8px 5px;
+
+
+
+}
+
+.jahid {
+    text-align: right;
+    background-color: #418b87;
+}
+
+/* Image hover effect */
+.flex-column img:hover {
+    transform: scale(1.1);
+    /* Slight zoom effect */
+    transition: transform 0.3s ease;
+}
+
+/* Price hover effect */
+.jahid:hover {
+    background-color: #ff6347;
+    /* Change background color on hover */
+    cursor: pointer;
+    /* Change cursor to pointer */
+}
+
+/* Change the price text on hover */
+.jahid:hover::after {
+
+    display: inline;
+    margin-left: 5px;
+    /* Add some space between the original price and the new price */
+}
+
+/* Standard state for price */
+.jahid::before {
+
+    display: inline;
+    margin-left: 5px;
+    /* Add some space between the original price and the new price */
+}
+
+.about-section .main-column {
+    /* absolute dila padding margin kaj korba na..absolute dila about-section ar upora jaba */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    align-items: center;
+    position: absolute;
+
+}
+
+.about-section .left-column img {
+    width: 100%;
+}
+
+.about-section .main-column {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.about-section .main-column a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #003366;
+}
+
+.about-section .main-column .right-column p {
+    padding-top: 30px;
+}
+
+.about-section .main-column .right-column h1 {
+    padding-bottom: 14px;
+    text-align: center;
+}
+
+.about-section {
+    background-color: #c1dbf5;
+
+}
+
+/* ..........................................FAQ container */
+
+/* General reset and setup */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+/* .......................................................................FAQ container */
+
+.faq-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e5d294f7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ item */
+.faq-item {
+    margin-bottom: 15px;
+}
+
+/* FAQ question */
+.faq-question {
+    background-color: #7e6624;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    border-radius: 13px;
+}
+
+.faq-question:hover {
+    background-color: #d87c27;
+}
+
+/* FAQ answer */
+.faq-answer {
+    padding: 15px;
+    display: none;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.faq-answer p {
+    margin-bottom: 0;
+}
+
+/* Show answer when question is clicked */
+.faq-question.active + .faq-answer {
+    display: block;
+}
+
+@media only screen and (min-width: 768px){
+    .container{
+        flex-wrap: wrap;
+    }
+}
